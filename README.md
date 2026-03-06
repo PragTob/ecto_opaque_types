@@ -28,7 +28,9 @@ Function call without opaqueness type mismatch.
 ```
 
 <details>
+
   <summary>Full dialyzer output</summary>
+
 ```
 ecto_opaque_types git:(main) ✗ mix dialyzer
 Compiling 1 file (.ex)
@@ -151,6 +153,7 @@ ________________________________________________________________________________
 done (warnings were emitted)
 Halting VM with exit status 2
 ```
+
 </details>
 
 ## Root cause

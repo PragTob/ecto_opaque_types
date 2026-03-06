@@ -1,18 +1,13 @@
 defmodule EctoOpaqueTypes do
   @moduledoc """
-  Documentation for `EctoOpaqueTypes`.
+  Minimal reproduction for the `call_without_opaque` Dialyzer warning
+  triggered by `Ecto.Multi` operations on OTP 28.
+
+  Run `mix dialyzer` to reproduce the warning.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> EctoOpaqueTypes.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  @spec build_multi() :: Ecto.Multi.t()
+  def build_multi do
+    Ecto.Multi.new()
   end
 end

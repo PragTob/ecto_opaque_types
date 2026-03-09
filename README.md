@@ -1,5 +1,7 @@
 # ecto_opaque_types
 
+**Fixed upstream** - on `elixir` main `MapSet` has now `@typep` instead of opaque and so this confirmed passes on 1.20.0-rc.2.
+
 Minimal reproduction for a `call_without_opaque` Dialyzer warning triggered by `Ecto.Multi` operations under OTP 28.
 
 ## Environment
